@@ -4,8 +4,73 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hidden {
     display: none;
 }
+
+header nav ul li a:hover, .active {
+    background-color: #ffffff;
+    color: #1e4574;
+
+}
+
+/* HTML LAYOUT */
+/* HEADER */
+header{
+    border-bottom: #1e4574 1px solid;
+    padding-bottom: 0.75em;
+    margin-bottom: 0.75em;
+    border-radius: 0.15em;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li:not(:first-child){
+    margin-left: 10em;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1e4574;
+    padding: 0.5em 1em;
+    border: #1e4574 1px solid;
+    border-radius: 0.5em;
+}
+
+/* MAIN */
+main{
+    border: #1e4574 1px solid;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #275b9a;
+    color: #ffffff;
+}
+
+main h1{
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0.15em;
+}
+
+main p{
+    margin-left: 0.25em;
+}
+
+main li{
+    list-style:inside;
+}
+
+main ul li > p + p{
+    margin-left: 5em;
+}
+
+
+/* FOOTER */
