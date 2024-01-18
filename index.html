@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="@JosseVandeputte">
+    <meta name="description" content="CV van Josse Vandeputte">
     <title>CV van Josse Vandeputte</title>
     <!-- LINKS -->
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -15,74 +16,104 @@
         <nav>        
             <img src="images/jvLogo.png">
             <ul>
-                <li><a href="#" class="active">Wie ben ik?</a></li>
-                <li><a href="#" class="">Opleiding</a></li>
-                <li><a href="#" class="">Ervaring</a></li>
-                <li><a href="#" class="">Vaardigheden</a></li>
-                <li><a href="en/en.html" class="">In English</a></li>
+                <li><a href="#" id ="btnWhoAmI" class="active">Wie ben ik?</a></li>
+                <li><a href="#" id ="btnEducation" class="">Opleiding</a></li>
+                <li><a href="#" id="btnExperience" class="">Ervaring</a></li>
+                <li><a href="#" id="btnSkills" class="">Vaardigheden</a></li>
+                <li><a href="#" id="btnContact" class="">Contact</a></li>
+                <li><a href="index_en.html" id="btnLanguage" class="">In English</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="whoAmI">
+        <section id="whoAmI" class="">
             <h1>CV van Josse Vandeputte</h1>
-            <p>Mijn naam is Josse Vandeputte, ik ben 18 jaar oud (geboren op 18 juli 2005) en ik woon in Brugge. Ik studeer momenteel Toegepaste Informatica aan Howest Brugge.</p>
+            <p>
+                Mijn naam is Josse Vandeputte, ik ben <em id="age">18</em> jaar oud (geboren op 18 juli 2005) en ik woon in Brugge. Ik studeer momenteel Toegepaste 
+                Informatica aan Howest Brugge. Ik ben vooral geinteresseerd in webontwikkeling en applicatieontwikkeling. Ik heb al enige ervaring met 
+                HTML, CSS, JavaScript, PHP, SQL en C# door mijn studies en door zelfstudie.
+            </p>
+            <p>
+                Ik ben een gemotiveerde student die graag bijleert en nieuwe dingen ontdekt. Ik ben ook een teamplayer, ik werk graag samen met anderen om een 
+                zo goed mogelijk resultaat te behalen.
+            </p>
+            <p>
+                In mijn vrije tijd speel ik graag videogames, ik kijk ook graag naar films en series. Ik ben ook een grote fan van muziek, ik speelde zelf ook 
+                drum en volgde hiervoor muzieklessen en notenleer in mijn vroegere jaren (dus ik heb een kleine ervaring met muziek), maar vooral luister ik graag 
+                naar muziek wanneer ik maar kan want dit ontspant mij.
+            </p>
+            <p>
+                Op deze site, vindt u dus mijn CV. U kunt met de knoppen hierboven naar andere pagina's gaan voor meer informatie te vinden over mij. 
+                Als u dit in beter in engels wilt lezen kunt u altijd op de "In English" knop klikken.
+                Als u toch nog extra vragen heeft voor mij of mij wilt contacteren, dan kunt u dit doen via de contactpagina of door op de logo's 
+                aan de onderkant van elke pagina te klikken mij.
+            </p>
+            <p>
+                Wilt u mijn andere projecten zien? Dan kunt u zich begeven naar mijn GitHub pagina, deze kunt u vinden door op het GitHub logo te klikken 
+                of naar mijn eigen website te gaan door <a href="https://www.jvdp.be" target="_blank">hier te klikken</a>.             
+                <span id="extraInformation">
+                    (Deze projecten die u vindt zijn mogelijks aan de kleine kant want ik ben nog bezig aan een groot project om te vormen naar een webapplicatie.)
+                </span>
+            </p>
         </section>
-        <section class="education">
+        <section id="education" class="hidden">
             <h1>Opleiding</h1>
-            <ul>
-                <li>Howest Brugge</li>
-                <p>2023 - ...</p>
-                <p>Toegepaste Informatica</p>
-                <li>Sint-Jozefsinstituut Brugge</li>
-                <p>2021 - 2023</p>
-                <p>Boekhouding & IT</p>
-                <p>2019 - 2021</p>
-                <p>Ondernemen & IT</p>
-                <li>Sint-Franciscus-Xaveriusinstituut Brugge</li>
-                <p>2017 - 2019</p>
-                <p>STEM</p>
-            </ul>
+            <dl>
+                <dt>Howest Brugge</dt>
+                <dd>Toegepaste Informatica</dd>
+                <dd class="ddYear">2023 - ...</dd>
+                <dt>Sint-Jozefsinstituut Brugge</dt>
+                <dd>Boekhouding & IT</dd>
+                <dd class="ddYear">2021 - 2023</dd>
+                <dd>Ondernemen & IT</dd>
+                <dd class="ddYear">2019 - 2021</dd>
+                <dt>Sint-Franciscus-Xaveriusinstituut Brugge</dt>
+                <dd>STEM</dd>
+                <dd class="ddYear">2017 - 2019</dd>
+            </dl>
         </section>
-        <section class="experience hidden">
+        <section id="experience" class="hidden">
             <h1>Ervaring</h1>
-            <ul>
-                <li>Action Brugge</li>
-                <p>2021 - ...</p>
-                <p>Tijdens mijn studies werk ik bij Action als kassier en vuller.</p>
-                <li>Webontwikkelaar</li>
-                <p>2023 - ...</p>
-                <p>Ik ben momenteel de webontwikkelaar van de bedrijfssite van mijn stiefvader. <a href="https://www.vigilislawconsult.be">Klik hier!</a></p>
-            </ul>
+            <dl>
+                <dt>Action Brugge</dt>
+                <dd>Tijdens mijn studies werk ik bij Action als kassier en vuller.</dd>
+                <dd class="ddYear">2021 - ...</dd>
+                <dt>Webontwikkelaar</dt>
+                <dd>Ik ben momenteel de webontwikkelaar van de bedrijfssite van mijn stiefvader. <a href="https://www.vigilislawconsult.be" target="_blank">Klik hier!</a></dd>
+                <dd class="ddYear">2023 - ...</dd>
+            </dl>
         </section>
-        <section class="skills hidden">
+        <section id="skills" class="hidden">
             <h1>Vaardigheden</h1>
-            <ul>
-                <li>HTML</li>
-                <p>HTML is de standaardtaal voor het maken van webpagina's.</p>
-                <li>CSS</li>
-                <p>CSS is de taal die we gebruiken om een HTML-document te stylen.</p>
-                <li>JavaScript</li>
-                <p>JavaScript is de populairste programmeertaal ter wereld.</p>
-                <li>PHP</li>
-                <p>PHP is een server-scripttaal en een krachtig hulpmiddel voor het maken van dynamische en interactieve webpagina's.</p>
-                <li>SQL</li>
-                <p>SQL is een standaardtaal voor het opslaan, manipuleren en ophalen van gegevens in databases.</p>
-                <li>C#</li>
-                <p>C# is een moderne, objectgeoriënteerde programmeertaal ontwikkeld door Microsoft. Het wordt veel gebruikt voor het ontwikkelen van desktopapplicaties, webapplicaties en games.</p>
-            </ul>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HTML is de standaardtaal voor het maken van webpagina's.</dd>
+                <dt>CSS</dt>
+                <dd>CSS is de taal die we gebruiken om een HTML-document te stylen.</dd>
+                <dt>JavaScript</dt>
+                <dd>JavaScript is de populairste programmeertaal ter wereld.</dd>
+                <dt>PHP</dt>
+                <dd>PHP is een server-scripttaal en een krachtig hulpmiddel voor het maken van dynamische en interactieve webpagina's.</dd>
+                <dt>SQL</dt>
+                <dd>SQL is een standaardtaal voor het opslaan, manipuleren en ophalen van gegevens in databases.</dd>
+                <dt>C#</dt>
+                <dd>C# is een moderne, objectgeoriënteerde programmeertaal ontwikkeld door Microsoft. Het wordt veel gebruikt voor het ontwikkelen van desktopapplicaties, webapplicaties en games.</dd>
+            </dl>
+        </section>
+        <section id="contact" class="hidden">
+            <h1>Contact</h1>
+            <p>Naam: Josse Vandeputte</p>
+            <p>Mobiel: <a href="tel:+32474136312" target="_blank">+32 474 13 63 12</a> <span id="extraInformation"> (Telefonische ben ik niet direct snel beschikbaar, gelieve een bericht of email te sturen)</span></p>
+            <p>Email: <a href="mailto:josse.vandeputte@gmail.com" target="_blank">josse.vandeputte@gmail.com</a></p>
+            <p>Adres: </p>
+            <p id="contactAdresse">18-oktoberstraat 27</p>
+            <p id="contactAdresse">8200 BRUGGE</p>
         </section>
     </main>
-    <footer>
-        <p>Naam: Vandeputte Josse</p>
-        <p>Telefoon: <a href="tel:+32474136312">+32 474 13 63 12</a></p>
-        <p>Email: <a href="mailto:josse.vandeputte@gmail.com">josse.vandeputte@gmail.com</a></p>
-        <p>Adres: <br>
-        18-oktoberstraat 27 <br>
-        8200 BRUGGE
-        </p>
-        <a href="https://www.github.com/JosseVandeputte"><img src="images/github-mark.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/josse-vandeputte-1126bb2a9/"><img src="images/LI-In-Bug.png" alt="LinkedIn"></a>
+    <footer class="">
+        <a href="https://wa.me/32474126312" target="_blank"><img src="images/whatsappLogo.png" alt="Whatsapp"></a>
+        <a href="https://www.github.com/JosseVandeputte" target="_blank"><img src="images/githubLogo.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/josse-vandeputte-1126bb2a9/" target="_blank"><img src="images/linkedInLogo.png" alt="LinkedIn"></a>
     </footer>
 </body>
 </html>
