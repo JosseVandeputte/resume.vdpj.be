@@ -1,8 +1,8 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', initResume);
 
-function init() {
+function initResume() {
     // PAGES NAVIGATION
     const buttons = ['btnWhoAmI', 'btnEducation', 'btnExperience', 'btnSkills', 'btnContact'];
     const sections = ['whoAmI', 'education', 'experience', 'skills', 'contact'];

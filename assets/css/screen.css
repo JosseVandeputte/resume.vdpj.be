@@ -15,11 +15,6 @@ body {
     display: none;
 }
 
-header nav ul li a:hover, .active {
-    background-color: #ffffff;
-    color: #1e4574;
-}
-
 a{
     color: #ffffff;
 }
@@ -40,6 +35,16 @@ header{
 
 header nav ul li{
     display: inline;
+    
+}
+
+header nav ul li:hover{
+    cursor: pointer;
+}
+
+header nav ul li a:hover, .active {
+    background-color: #ffffff;
+    color: #1e4574;
 }
 
 header nav ul li:not(:first-child){
