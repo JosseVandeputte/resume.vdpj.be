@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="@JosseVandeputte">
     <meta name="description" content="CV van Josse Vandeputte">
-    <link rel="icon" href="/assets/media/jvLogo.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/media/jvLogo.ico" type="image/x-icon">
     <title>CV van Josse Vandeputte</title>
     <!-- LINKS -->
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/screen.css">
-    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styleResume.css">
+    <script src="./assets/js/scriptResume.js"></script>
 </head>
 <body>
     <header>
         <nav>        
-            <img src="/images/jvLogo.png">
+            <a href="https://www.vdpj.be"><img src="./images/jvLogo.png"></a>
             <ul>
                 <li><a id ="btnWhoAmI" class="active">Wie ben ik?</a></li>
                 <li><a id ="btnEducation" class="">Opleiding</a></li>
                 <li><a id="btnExperience" class="">Ervaring</a></li>
                 <li><a id="btnSkills" class="">Vaardigheden</a></li>
                 <li><a id="btnContact" class="">Contact</a></li>
-                <li><a href="index_en.html" id="btnLanguage" class="">In English</a></li>
+                <li><a href="./en" id="btnLanguage" class="">In English</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
             <p>
                 Mijn naam is Josse Vandeputte, ik ben <em id="age">18</em> jaar oud (geboren op 18 juli 2005) en ik woon in Brugge. Ik studeer momenteel Toegepaste 
                 Informatica aan Howest Brugge. Ik ben vooral geinteresseerd in webontwikkeling en applicatieontwikkeling. Ik heb al enige ervaring met 
-                HTML, CSS, JavaScript, PHP, SQL en C# door mijn studies en door zelfstudie.
+                HTML, CSS, JavaScript, PHP, SQL, C#, ... door mijn studies en door zelfstudie.
             </p>
             <p>
                 Ik ben een gemotiveerde student die graag bijleert en nieuwe dingen ontdekt. Ik ben ook een teamplayer, ik werk graag samen met anderen om een 
@@ -47,13 +47,16 @@
                 Op deze site, vindt u dus mijn CV. U kunt met de knoppen hierboven naar andere pagina's gaan voor meer informatie te vinden over mij. 
                 Als u dit in beter in engels wilt lezen kunt u altijd op de "In English" knop klikken.
                 Als u toch nog extra vragen heeft voor mij of mij wilt contacteren, dan kunt u dit doen via de contactpagina of door op de logo's 
-                aan de onderkant van elke pagina te klikken mij.
+                aan de onderkant van elke pagina te klikken mij. 
+                <span id="extraInformation">
+                    <br>(Mijn CV is nog niet volledig af, ik ben nog bezig met het toevoegen van meer informatie. Deze wordt dus om de zoveel tijd geupdate.)
+                </span>
             </p>
             <p>
                 Wilt u mijn andere projecten zien? Dan kunt u zich begeven naar mijn GitHub pagina, deze kunt u vinden door op het GitHub logo te klikken 
-                of naar mijn eigen website te gaan door <a href="https://www.vdpj.be" target="_blank">hier te klikken</a>.             
+                of naar mijn eigen website te gaan door <a href="https://www.vpdj.be" target="_blank">hier te klikken</a>.             
                 <span id="extraInformation">
-                    (Deze projecten die u vindt zijn mogelijks aan de kleine kant want ik ben nog bezig aan een groot project om te vormen naar een webapplicatie.)
+                    <br>(Deze projecten die u vindt zijn mogelijks aan de kleine kant want ik ben nog bezig aan een groot project om te vormen naar een webapplicatie.)
                 </span>
             </p>
         </section>
@@ -87,34 +90,56 @@
         <section id="skills" class="hidden">
             <h1>Vaardigheden</h1>
             <dl>
-                <dt>HTML</dt>
-                <dd>HTML is de standaardtaal voor het maken van webpagina's.</dd>
-                <dt>CSS</dt>
-                <dd>CSS is de taal die we gebruiken om een HTML-document te stylen.</dd>
-                <dt>JavaScript</dt>
-                <dd>JavaScript is de populairste programmeertaal ter wereld.</dd>
-                <dt>PHP</dt>
-                <dd>PHP is een server-scripttaal en een krachtig hulpmiddel voor het maken van dynamische en interactieve webpagina's.</dd>
-                <dt>SQL</dt>
-                <dd>SQL is een standaardtaal voor het opslaan, manipuleren en ophalen van gegevens in databases.</dd>
-                <dt>C#</dt>
-                <dd>C# is een moderne, objectgeoriënteerde programmeertaal ontwikkeld door Microsoft. Het wordt veel gebruikt voor het ontwikkelen van desktopapplicaties, webapplicaties en games.</dd>
+                <h2>Programmeertaal</h2>
+                <!-- Dropdown menu -->
+                <div>
+                    <dt>HTML - Sinds 2021</dt>
+                    <dd>HTML is de standaardtaal voor het maken van webpagina's.</dd>
+                    <dt>CSS - Sinds 2021</dt>
+                    <dd>CSS is de taal die we gebruiken om een HTML-document te stylen.</dd>
+                    <dt>JavaScript - Sinds 2023</dt>
+                    <dd>JavaScript is de populairste programmeertaal ter wereld.</dd>
+                    <dt>PHP - Sinds 2021</dt>
+                    <dd>PHP is een server-scripttaal en een krachtig hulpmiddel voor het maken van dynamische en interactieve webpagina's.</dd>
+                    <dt>SQL - Sinds 2021</dt>
+                    <dd>SQL is een standaardtaal voor het opslaan, manipuleren en ophalen van gegevens in databases.</dd>
+                    <dt>C# - Sinds 2021</dt>
+                    <dd>C# is een moderne, objectgeoriënteerde programmeertaal ontwikkeld door Microsoft. Het wordt veel gebruikt voor het ontwikkelen van desktopapplicaties, webapplicaties en games.</dd>
+                </div>
+                <h2>Praktische Vaardigheden</h2>
+                <!-- Dropdown menu -->
+                <div>
+                    <dt>Microsft Office 365</dt>
+                    <dd>Microsoft Office 365 is een verzameling van online diensten, die worden gehost door Microsoft zelf. Het is de opvolger van Microsoft BPOS, een pakket met online diensten.</dd>
+                    <dt>Adobe Photoshop</dt>
+                    <dd>Adobe Photoshop is een grafisch programma ontwikkeld door Adobe voor het bewerken van foto's en ander digitaal beeldmateriaal via de computer.</dd>
+                </div>
+                <h2>Talen</h2>
+                <!-- Dropdown menu -->
+                <div>
+                    <dt>Nederlands</dt>
+                    <dd>Moedertaal</dd>
+                    <dt>Engels</dt>
+                    <dd>Goed</dd>
+                    <dt>Frans</dt>
+                    <dd>Basis</dd>
+                </div>
             </dl>
         </section>
         <section id="contact" class="hidden">
             <h1>Contact</h1>
             <p>Naam: Josse Vandeputte</p>
-            <p>Mobiel: <a href="tel:+32474136312" target="_blank">+32 474 13 63 12</a> <span id="extraInformation"> (Telefonische ben ik niet direct snel beschikbaar, gelieve een bericht of email te sturen)</span></p>
+            <!-- <p>Mobiel: <a href="tel:+" target="_blank">+</a> <span id="extraInformation"></p> -->
+
             <p>Email: <a href="mailto:josse.vandeputte@gmail.com" target="_blank">josse.vandeputte@gmail.com</a></p>
-            <p>Adres: </p>
-            <p id="contactAdresse">18-oktoberstraat 27</p>
-            <p id="contactAdresse">8200 BRUGGE</p>
+            <!-- <p>Adres: </p> -->
+        </section>
         </section>
     </main>
     <footer class="">
-        <a href="https://wa.me/32474126312" target="_blank"><img src="/images/whatsappLogo_black.png" alt="Whatsapp"></a>
-        <a href="https://www.github.com/JosseVandeputte" target="_blank"><img src="/images/githubLogo.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/josse-vandeputte-1126bb2a9/" target="_blank"><img src="/images/linkedInLogo.png" alt="LinkedIn"></a>
+        <a href="https://wa.me/32474136312" target="_blank"><img src="./images/whatsappLogo_black.png" alt="WhatsApp"></a>
+        <a href="https://www.github.com/JosseVandeputte" target="_blank"><img src="./images/githubLogo.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/josse-vandeputte-1126bb2a9/" target="_blank"><img src="./images/linkedInLogo.png" alt="LinkedIn"></a>
     </footer>
 </body>
 </html>
